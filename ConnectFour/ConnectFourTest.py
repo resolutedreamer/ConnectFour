@@ -1,14 +1,25 @@
 #!/usr/bin/env python
 # Tests for ConnectFour.py
 import unittest
-import ConnectFour
+import sys
+from ConnectFour import ConnectFour
 
 class ConnectFourTest(unittest.TestCase):
     def setUp(self):
         self.newGame = ConnectFour(7,3)
 
-    def test_play_game(self):
-        self.newGame.play()
+    def test_setUp_success(self):
+        self.assertTrue(self.newGame is not None)
+
+    def test_play(self):
+        #self.newGame.play()
+        self.assertTrue(True)
+
+    def test_print_new_board(self):
+        if not hasattr(sys.stdout, "getvalue"):
+            self.fail("need to run in buffered mode")
+        output = sys.stdout.getvalue().strip()
+        self.assertEqual(output, "[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]")
         
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(buffer = True)

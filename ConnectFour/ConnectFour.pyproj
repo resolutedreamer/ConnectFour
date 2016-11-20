@@ -6,7 +6,7 @@
     <ProjectGuid>e9b4e5f9-f52b-4583-af5f-c5e332f5e360</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>ConnectFour.py</StartupFile>
+    <StartupFile>ConnectFourTest.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,9 +25,6 @@
   <ItemGroup>
     <Compile Include="ConnectFour.py" />
     <Compile Include="ConnectFourTest.py" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include=".travis.yml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

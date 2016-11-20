@@ -22,12 +22,15 @@ class ConnectFour():
         if self.currentPlayer == False:
             return '2'
 
+    def print_board(self):
+        for cidx, column in enumerate(self.board):
+            for ridx, row in enumerate(column):
+                print self.board[cidx][ridx],
+            print
+
     def play(self):
         while not self.gameOver:
-            for cidx, column in enumerate(self.board):
-                for ridx, row in enumerate(column):
-                    print self.board[cidx][ridx],
-                print
+            self.print_board()
 
             print "Player" + self.getPlayerNum() + "'s Turn"
             performedMove = self.getPlayerMove()
