@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 class ConnectFour():
     def __init__(self, height, width):
         self.height = height
@@ -118,10 +120,3 @@ class ConnectFour():
             self.gameOver = True
         else:
             self.gameOver = False
-
-def main():
-    newGame = ConnectFour(7,3)
-    newGame.play()
-
-if __name__ == "__main__":
-    main()
