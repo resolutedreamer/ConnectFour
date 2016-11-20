@@ -9,7 +9,7 @@ A Python implementation of ConnectFour. Still incomplete.
 
 ### Installation
 
-Run ConnectFourTest.py to play!
+Run ConnectFour.py to play!
 
 ## Contributors
 

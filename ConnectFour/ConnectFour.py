@@ -8,8 +8,7 @@ class ConnectFour():
         self.columnCounts = [0]*width
         for i in range(width):
             self.board.append([0]*height)
-        print self.board
-
+        
         # False while game is being played; True when a player wins
         self.gameOver = False
         # True for player 1, False for player 2
@@ -123,3 +122,10 @@ class ConnectFour():
             self.gameOver = True
         else:
             self.gameOver = False
+
+def main():
+    newGame = ConnectFour(8, 9)
+    newGame.play()
+
+if __name__ == '__main__':
+    main()
