@@ -1,5 +1,6 @@
 ConnectFour
 ======
+[![Build Status](https://travis-ci.org/resolutedreamer/ConnectFour.svg?branch=master)](https://travis-ci.org/resolutedreamer/ConnectFour)
 A Python implementation of ConnectFour. Still incomplete.
 
 #### Screenshot
