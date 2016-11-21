@@ -16,7 +16,7 @@ class ConnectFourTest(unittest.TestCase):
             self.fail("need to run in buffered mode")
         self.newGame.print_board()
         output = sys.stdout.getvalue().strip()
-        self.assertEqual(output, "[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]")
+        self.assertEqual(output, "0 0 0 0 0 0 0\n0 0 0 0 0 0 0\n0 0 0 0 0 0 0")
     
     def test_play(self):
         #self.newGame.play()
