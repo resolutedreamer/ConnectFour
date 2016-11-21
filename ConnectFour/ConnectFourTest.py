@@ -14,6 +14,7 @@ class ConnectFourTest(unittest.TestCase):
     def test_print_new_board(self):
         if not hasattr(sys.stdout, "getvalue"):
             self.fail("need to run in buffered mode")
+        self.newGame.print_board()
         output = sys.stdout.getvalue().strip()
         self.assertEqual(output, "[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]")
     

@@ -22,6 +22,7 @@ class ConnectFour():
             return '2'
 
     def print_board(self):
+        print self.board
         for cidx, column in enumerate(self.board):
             for ridx, row in enumerate(column):
                 print self.board[cidx][ridx],
